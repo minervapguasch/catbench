@@ -1,0 +1,4 @@
+# env fiels
+.env
+.env.*
+!.env.example

@@ -1,0 +1,1 @@
+mix run -e 'Catbench.CLI.main(["--input","data/ca_items_v1.yaml","--out","results.json","--concurrency","10"])'

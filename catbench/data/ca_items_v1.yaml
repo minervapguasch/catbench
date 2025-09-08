@@ -1,0 +1,413 @@
+items:
+  - id: subj_present_001
+    task: cloze
+    instruction: "Omple el buit amb una sola paraula. Respon només amb la paraula."
+    text: "Volem que ell **[CREURE]** que és possible."
+    expect:
+      type: regex
+      pattern: "^(cregui)$"
+
+  - id: subj_present_002
+    task: cloze
+    instruction: "Omple el buit amb una sola paraula."
+    text: "És important que vosaltres **[SABER]** la resposta."
+    expect:
+      type: regex
+      pattern: "^(sapigueu)$"
+
+  - id: subj_present_003
+    task: cloze
+    instruction: "Respon amb una sola paraula."
+    text: "No crec que ells **[VENIR]** avui."
+    expect:
+      type: regex
+      pattern: "^(vinguin)$"
+
+  - id: subj_past_001
+    task: cloze
+    instruction: "Escriu la forma correcta."
+    text: "Si jo ho **[SABER]**, t'ho hauria dit."
+    expect:
+      type: regex
+      pattern: "^(sabés|saber)$"
+
+  - id: perifrastic_1pl_001
+    task: cloze
+    instruction: "Omple el buit amb la forma correcta."
+    text: "(Nosaltres) ahir **[ANAR]** al teatre."
+    expect:
+      type: regex
+      pattern: "^(vam anar)$"
+
+  - id: perifrastic_3sg_001
+    task: cloze
+    instruction: "Omple el buit amb la forma correcta."
+    text: "(Ella) ahir **[MENJAR]** arròs."
+    expect:
+      type: regex
+      pattern: "^(va menjar)$"
+
+  - id: futur_simple_001
+    task: cloze
+    instruction: "Escriu la forma correcta."
+    text: "Demà nosaltres **[SORTIR]** ben d'hora."
+    expect:
+      type: regex
+      pattern: "^(sortirem)$"
+
+  - id: condicional_001
+    task: cloze
+    instruction: "Escriu la forma correcta."
+    text: "Si pogués, jo ho **[FER]** ara mateix."
+    expect:
+      type: regex
+      pattern: "^(faria)$"
+
+  - id: imperatiu_2sg_001
+    task: cloze
+    instruction: "Escriu la forma correcta."
+    text: "**[ANAR]** amb compte!"
+    expect:
+      type: regex
+      pattern: "^(vés|ves)$"
+
+  - id: imperatiu_2pl_001
+    task: cloze
+    instruction: "Escriu la forma correcta."
+    text: "**[CALLAR]**, si us plau!"
+    expect:
+      type: regex
+      pattern: "^(calleu)$"
+
+  - id: pronoms_001
+    task: mcq
+    instruction: "Tria l'opció A/B/C/D correcta. Respon només amb la lletra."
+    text: "No ___ vaig explicar ahir."
+    options: ["li ho","l'hi","ho li","li'l"]
+    correct: "B"
+
+  - id: pronoms_002
+    task: mcq
+    instruction: "Tria la resposta correcta."
+    text: "Quan el veus, sempre ___ saludes."
+    options: ["li","en","ho","la"]
+    correct: "A"
+
+  - id: pronoms_003
+    task: mcq
+    instruction: "Tria la resposta correcta."
+    text: "Vaig comprar un llibre i ___ vaig regalar a la Maria."
+    options: ["li'l","el li","l'ho","li el"]
+    correct: "A"
+
+  - id: pronoms_004
+    task: mcq
+    instruction: "Tria l’opció correcta."
+    text: "Ja ___ vaig dir que vindria."
+    options: ["t'ho","ho't","et ho","te ho"]
+    correct: "A"
+
+  - id: pronoms_005
+    task: mcq
+    instruction: "Tria l’opció correcta."
+    text: "Ens van portar cafè i nosaltres ___ vam agrair."
+    options: ["els ho","ho els","els'ho","elshi"]
+    correct: "A"
+
+  - id: pronoms_006
+    task: mcq
+    instruction: "Quina és la forma correcta?"
+    text: "Vaig sentir una història i te la vaig voler explicar, però no ___ vaig trobar."
+    options: ["et hi","t'hi","et","t'"]
+    correct: "C"
+
+  - id: pronoms_007
+    task: mcq
+    instruction: "Tria la forma correcta."
+    text: "Porta'm les claus, si us plau. Pots ___ portar ara?"
+    options: ["me les","les me","me'ls","els me"]
+    correct: "A"
+
+  - id: ortografia_dieresi_001
+    task: cloze
+    instruction: "Respon amb una sola paraula."
+    text: "Beurem el suc de ___ [RAIM]."
+    expect:
+      type: exact
+      value: "raïm"
+
+  - id: ortografia_dieresi_002
+    task: cloze
+    instruction: "Respon amb una sola paraula."
+    text: "El gos va travessar el ___ [PAIS]."
+    expect:
+      type: exact
+      value: "país"
+
+  - id: ortografia_accent_001
+    task: cloze
+    instruction: "Respon amb una sola paraula."
+    text: "Ens trobarem a les tres de la ___ [TARDA]."
+    expect:
+      type: exact
+      value: "tarda"
+
+  - id: ortografia_accent_002
+    task: cloze
+    instruction: "Omple amb la paraula correcta."
+    text: "La ___ [PERA] és una fruita."
+    expect:
+      type: exact
+      value: "pera"
+
+  - id: ortografia_accent_003
+    task: cloze
+    instruction: "Omple amb la paraula correcta."
+    text: "A la ___ [PLAÇA] hi havia molta gent."
+    expect:
+      type: exact
+      value: "plaça"
+
+  - id: ortografia_apostrof_001
+    task: cloze
+    instruction: "Escriu la forma correcta."
+    text: "Vam veure ___ [EL] arbre florit."
+    expect:
+      type: exact
+      value: "l'arbre"
+
+  - id: ortografia_apostrof_002
+    task: cloze
+    instruction: "Escriu la forma correcta."
+    text: "Va caure dins ___ [AIGUA]."
+    expect:
+      type: exact
+      value: "l'aigua"
+
+  - id: ortografia_guionet_001
+    task: cloze
+    instruction: "Escriu la paraula correcta."
+    text: "Han arribat els pactes ___ [MARCO]."
+    expect:
+      type: exact
+      value: "marc"
+
+  - id: ortografia_guionet_002
+    task: cloze
+    instruction: "Escriu la forma correcta."
+    text: "Els documents socio ___ [ECONÒMIC]."
+    expect:
+      type: exact
+      value: "socioeconòmic"
+
+  - id: article_001
+    task: cloze
+    instruction: "Escriu l'article correcte."
+    text: "___ arbre és molt alt."
+    expect:
+      type: exact
+      value: "L'"
+
+  - id: article_002
+    task: cloze
+    instruction: "Escriu l'article correcte."
+    text: "___ casa és blanca."
+    expect:
+      type: exact
+      value: "La"
+
+  - id: preposicio_001
+    task: cloze
+    instruction: "Omple amb la preposició adequada."
+    text: "Vaig pensar ___ tu tota la tarda."
+    expect:
+      type: exact
+      value: "en"
+
+  - id: preposicio_002
+    task: cloze
+    instruction: "Omple amb la preposició adequada."
+    text: "Anirem ___ Barcelona demà."
+    expect:
+      type: exact
+      value: "a"
+
+  - id: concordanca_001
+    task: cloze
+    instruction: "Escriu la forma correcta."
+    text: "Les noies són molt ___ [BONIC]."
+    expect:
+      type: exact
+      value: "boniques"
+
+  - id: concordanca_002
+    task: cloze
+    instruction: "Escriu la forma correcta."
+    text: "El nen i la nena són molt ___ [ALT]."
+    expect:
+      type: exact
+      value: "alts"
+
+  - id: concordanca_003
+    task: cloze
+    instruction: "Escriu la forma correcta."
+    text: "Aquestes taules són ___ [NOVELL]."
+    expect:
+      type: exact
+      value: "novelles"
+
+# --- Exemples durs de collons que ni jo sé fer
+  - id: subj_impf_001
+    task: cloze
+    instruction: "Omple amb la forma correcta en subjuntiu imperfet."
+    text: "Si ell **[CONÈIXER]** millor la situació, hauria actuat diferent."
+    expect:
+      type: regex
+      pattern: "^(conegués|coneixés)$"
+
+  - id: subj_plusquamperf_001
+    task: cloze
+    instruction: "Escriu la forma correcta en plusquamperfet de subjuntiu."
+    text: "Si nosaltres ho **[HAVER SABER]** abans, no hauríem vingut."
+    expect:
+      type: regex
+      pattern: "^(haguéssim sabut)$"
+
+  - id: subj_futur_001
+    task: cloze
+    instruction: "Escriu la forma en futur de subjuntiu (arcaic)."
+    text: "Quan ell **[VENIR]**, parlarem del tema."
+    expect:
+      type: regex
+      pattern: "^(vinguere)$"
+
+  - id: condicional_compost_001
+    task: cloze
+    instruction: "Escriu la forma correcta."
+    text: "Si haguessin tingut temps, ells ho **[FER]** amb molt de gust."
+    expect:
+      type: regex
+      pattern: "^(haurien fet)$"
+
+  - id: perifrastic_dial_001
+    task: cloze
+    instruction: "Escriu la forma correcta del passat perifràstic en 2a persona plural (variant occidental)."
+    text: "Vosaltres ahir **[ESTAR CANTAR]** tota la nit."
+    expect:
+      type: regex
+      pattern: "^(vàreu cantar|vareu cantar)$"
+
+  - id: pronoms_triple_001
+    task: mcq
+    instruction: "Tria l’opció correcta amb tres pronoms."
+    text: "Ja ___ havia explicat ahir, però no em vau escoltar."
+    options: ["te'n ho","t'ho'n","te n'ho","t'ho en"]
+    correct: "A"
+
+  - id: pronoms_expletiu_001
+    task: mcq
+    instruction: "Tria l’opció correcta amb pronom expletiu."
+    text: "De diners, no ___ quedaran gaires."
+    options: ["n'hi","en hi","hi'n","en"]
+    correct: "A"
+
+  - id: pronoms_reflexiu_001
+    task: mcq
+    instruction: "Tria l’opció correcta amb reflexiu i complement directe."
+    text: "Ell ___ volia imaginar de jove."
+    options: ["se la","se l'ho","se la hi","se la'n"]
+    correct: "A"
+
+  - id: pronoms_encavalc_001
+    task: mcq
+    instruction: "Tria la combinació de pronoms correcta."
+    text: "Les claus, no ___ donaré pas."
+    options: ["te les","les te","te'ls","tels"]
+    correct: "A"
+
+  - id: pronoms_perifr_001
+    task: mcq
+    instruction: "Tria la forma correcta en construcció perifràstica."
+    text: "Vam dir que ja ___ havíem parlat abans."
+    options: ["n'hi","hi en","en hi","en"]
+    correct: "D"
+
+  - id: ortografia_dieresi_rare_001
+    task: cloze
+    instruction: "Escriu amb dièresi."
+    text: "El ___ [VEINA] em va saludar."
+    expect:
+      type: exact
+      value: "veïna"
+
+  - id: ortografia_accent_dubt_001
+    task: cloze
+    instruction: "Escriu amb l’accent correcte."
+    text: "El ___ [MAQUINA] funciona perfectament."
+    expect:
+      type: exact
+      value: "màquina"
+
+  - id: ortografia_apostrof_dial_001
+    task: cloze
+    instruction: "Aplica l’apòstrof segons la normativa estàndard."
+    text: "Ens vam trobar amb ___ [EL] home del sac."
+    expect:
+      type: exact
+      value: "l'"
+
+  - id: ortografia_compost_001
+    task: cloze
+    instruction: "Escriu correctament el compost."
+    text: "Treballa en un estudi de música ___ [ELECTRO ACOUSTIC]."
+    expect:
+      type: exact
+      value: "electroacústic"
+
+  - id: ortografia_guionet_rare_001
+    task: cloze
+    instruction: "Escriu amb guionet segons la norma."
+    text: "Han arribat els convenis hispano ___ [FRANCÈS]."
+    expect:
+      type: exact
+      value: "hispano-francès"
+
+  - id: concordanca_dificil_001
+    task: cloze
+    instruction: "Escriu la forma correcta."
+    text: "Les aigües eren molt ___ [CLAR]."
+    expect:
+      type: exact
+      value: "clares"
+
+  - id: concordanca_partit_001
+    task: cloze
+    instruction: "Escriu la concordança correcta."
+    text: "Un grapat de nens ___ [CÓRRER] pel carrer."
+    expect:
+      type: regex
+      pattern: "^(corria|corrien)$"
+
+  - id: article_elis_001
+    task: cloze
+    instruction: "Escriu la forma correcta de l’article davant vocal."
+    text: "___ heroi va salvar la ciutat."
+    expect:
+      type: exact
+      value: "L'"
+
+  - id: preposicio_ambig_001
+    task: cloze
+    instruction: "Omple amb la preposició adequada."
+    text: "Confiem ___ la teva ajuda."
+    expect:
+      type: regex
+      pattern: "^(en)$"
+
+  - id: preposicio_lit_001
+    task: cloze
+    instruction: "Escriu la preposició més adequada en registre formal."
+    text: "Ens referim ___ l’article 15 de la Constitució."
+    expect:
+      type: exact
+      value: "a"

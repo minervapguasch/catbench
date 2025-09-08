@@ -1,0 +1,31 @@
+items:
+  - id: subj_present_001
+    task: cloze
+    instruction: "Omple el buit amb una sola paraula. Respon només amb la paraula."
+    text: "Volem que ell **[CREURE]** que és possible."
+    expect:
+      type: regex
+      pattern: "^(cregui)$"
+
+  - id: perifrastic_1pl_001
+    task: cloze
+    instruction: "Omple el buit amb la forma correcta."
+    text: "(Nosaltres) ahir **[ANAR]** al teatre."
+    expect:
+      type: regex
+      pattern: "^(vam anar)$"
+
+  - id: pronoms_001
+    task: mcq
+    instruction: "Tria l'opció A/B/C/D correcta. Respon només amb la lletra."
+    text: "No ___ vaig explicar ahir."
+    options: ["li ho","l'hi","ho li","li'l"]
+    correct: "B"
+    
+  - id: ortografia_dieresi_001
+    task: cloze
+    instruction: "Respon amb una sola paraula."
+    text: "Beurem el suc de ___ [RAIM]."
+    expect:
+      type: exact
+      value: "raïm"

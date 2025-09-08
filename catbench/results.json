@@ -1,0 +1,157 @@
+{
+    "generated_at": "2025-09-03T18:20:07.825325Z",
+    "models": [
+        {
+            "model": "openai/gpt-4o-mini",
+            "results": [
+                {
+                    "id": "subj_present_001",
+                    "meta": {
+                        "pattern": "^(cregui)$"
+                    },
+                    "ok": true,
+                    "output": "cregui",
+                    "tokens": {
+                        "total": 84,
+                        "completion": 2,
+                        "prompt": 82
+                    },
+                    "latency_ms": 992,
+                    "price": 1.35e-5
+                },
+                {
+                    "id": "perifrastic_1pl_001",
+                    "meta": {
+                        "pattern": "^(vam anar)$"
+                    },
+                    "ok": true,
+                    "output": "vam anar",
+                    "tokens": {
+                        "total": 77,
+                        "completion": 2,
+                        "prompt": 75
+                    },
+                    "latency_ms": 970,
+                    "price": 1.245e-5
+                },
+                {
+                    "id": "pronoms_001",
+                    "meta": {
+                        "correct": "B"
+                    },
+                    "ok": true,
+                    "output": "B",
+                    "tokens": {
+                        "total": 119,
+                        "completion": 1,
+                        "prompt": 118
+                    },
+                    "latency_ms": 902,
+                    "price": 1.83e-5
+                },
+                {
+                    "id": "ortografia_dieresi_001",
+                    "meta": {
+                        "expected": "raïm"
+                    },
+                    "ok": true,
+                    "output": "raïm",
+                    "tokens": {
+                        "total": 71,
+                        "completion": 3,
+                        "prompt": 68
+                    },
+                    "latency_ms": 1144,
+                    "price": 1.2e-5
+                }
+            ],
+            "summary": {
+                "total": 4,
+                "tokens": {
+                    "total": 351,
+                    "completion": 8,
+                    "prompt": 343
+                },
+                "accuracy_percentage": 100.0,
+                "corrects": 4,
+                "avg_latency_ms": 1002.0
+            }
+        },
+        {
+            "model": "anthropic/claude-3.5-haiku",
+            "results": [
+                {
+                    "id": "subj_present_001",
+                    "meta": {
+                        "pattern": "^(cregui)$"
+                    },
+                    "ok": true,
+                    "output": "cregui",
+                    "tokens": {
+                        "total": 101,
+                        "completion": 6,
+                        "prompt": 95
+                    },
+                    "latency_ms": 1035,
+                    "price": 0.0001
+                },
+                {
+                    "id": "perifrastic_1pl_001",
+                    "meta": {
+                        "pattern": "^(vam anar)$"
+                    },
+                    "ok": false,
+                    "output": "vàrem",
+                    "tokens": {
+                        "total": 93,
+                        "completion": 6,
+                        "prompt": 87
+                    },
+                    "latency_ms": 1429,
+                    "price": 9.36e-5
+                },
+                {
+                    "id": "pronoms_001",
+                    "meta": {
+                        "correct": "B"
+                    },
+                    "ok": true,
+                    "output": "B",
+                    "tokens": {
+                        "total": 142,
+                        "completion": 4,
+                        "prompt": 138
+                    },
+                    "latency_ms": 1392,
+                    "price": 1.264e-4
+                },
+                {
+                    "id": "ortografia_dieresi_001",
+                    "meta": {
+                        "expected": "raïm"
+                    },
+                    "ok": true,
+                    "output": "raïm",
+                    "tokens": {
+                        "total": 87,
+                        "completion": 6,
+                        "prompt": 81
+                    },
+                    "latency_ms": 979,
+                    "price": 8.88e-5
+                }
+            ],
+            "summary": {
+                "total": 4,
+                "tokens": {
+                    "total": 423,
+                    "completion": 22,
+                    "prompt": 401
+                },
+                "accuracy_percentage": 75.0,
+                "corrects": 3,
+                "avg_latency_ms": 1208.75
+            }
+        }
+    ]
+}
