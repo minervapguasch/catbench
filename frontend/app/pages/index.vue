@@ -54,6 +54,13 @@
       case 'combined': return CombinedCostAccuracyChart
       default: return AccuracyByModelChart
     }
+  });
+
+  useHead({
+    title: 'CatBench',
+    meta: [
+      { name: 'description', content: 'CatBench is a benchmark for Catalan language models' }
+    ]
   })
   </script>
 
